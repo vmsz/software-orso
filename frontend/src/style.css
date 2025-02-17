@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+  */
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  blockquote,
+  q {
+    quotes: none;
+  }
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  * {
+    outline: none;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url(./assets/fonts/Inter.ttf);
+  }
+  .light-theme {
+    --base: #858585;
+    --cell: #b9b9b9;
+    --cellHovered: #9d9d9d;
+    --button: #878787;
+    --header: #a0a0a0;
+    --toolbar: #959595;
+    --tooltip: #aaaaaa;
+    --modal: #b8b8b8;
+    --modal-container: #a9a9a9;
+    --modal-container-variant: #c3c3c3;
+    --menu: #b3b3b3;
+    --accent: #5f808e;
+    --accent-variant: #005559;
+    --inputs: #aaaaaa;
+    --border: #909090;
+    --border-variant: #838383;
+    --border-spreadsheet: #979797;
+    --inactive: #1111;
+    --primary: #303030;
+    --secondary: #484848;
+    --error: red;
+    --brightness: 0.75;
+
+    --first-level-item: #c7a900;
+    --second-level-item: #b79500;
+    --third-level-item: #897300;
+    --fourth-level-item: #5c5000;
+    --fifth-level-item: transparent;
+  }
+  .dark-theme {
+    --base: #272727;
+    --cells: #2c2c2c;
+    --cellHovered: #353535;
+    --button: #424242;
+    --header: #353535;
+    --toolbar: #353535;
+    --tooltip: #2c2c2c;
+    --modal: #2c2c2c;
+    --modal-container: #353535;
+    --modal-container-variant: #2e2e2e;
+    --menu: #2c2c2c;
+    --accent: #374449;
+    --accent-variant: #005559;
+    --inputs: #333333;
+    --border: #565656;
+    --border-variant: #00000000;
+    --border-spreadsheet: #444444;
+    --inactive: #1111;
+    --primary: #dddddd;
+    --secondary: #888888;
+    --error: rgb(177, 74, 74);
+    --brightness: 1.33;
+
+    --first-level-item: #c7a900;
+    --second-level-item: #b79500;
+    --third-level-item: #897300;
+    --fourth-level-item: #5c5000;
+    --fifth-level-item: transparent;
+  }
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-primary);
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type='number'] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+  button {
+    user-select: none;
+  }
+}
